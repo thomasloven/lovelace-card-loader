@@ -38,6 +38,10 @@ class CardLoader extends cardTools.litElement() {
     this._hass = hass;
     if(this.card) this.card.hass = hass;
   }
+  
+  getCardSize() {
+    return typeof this.card.getCardSize === 'function' ? this.card.getCardSize() : 1
+  }
 }
 
 customElements.define('card-loader', CardLoader);
