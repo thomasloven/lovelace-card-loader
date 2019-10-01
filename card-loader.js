@@ -40,6 +40,12 @@ class CardLoader extends cardTools.litElement() {
   }
 }
 
+cardTools.hass.callService('persistent_notification', 'create', {
+  notification_id: 'cardloader-deprecation',
+  title: 'Deprecated lovelace plugin',
+  message: "The `card-loader` plugin you are using was made for a very specific purpose which doesn't exist anymore. At this point, it is hurting your lovelace experience. It's time to let it go.",
+});
+
 customElements.define('card-loader', CardLoader);
 });
 

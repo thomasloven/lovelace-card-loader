@@ -1,5 +1,9 @@
 # card-loader
 
+# DEPRECATED
+## This card was created to work around a very specific problem with very few custom lovelace cards until the developers could fix them.
+## There should be no reason to use it anymore.
+
 A fix for custom cards wrapping other custom cards not loading correctly.
 
 This card requires [card-tools](https://github.com/thomasloven/lovelace-card-tools) to be installed.
